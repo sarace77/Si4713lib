@@ -173,8 +173,8 @@
 #define FM_BAND_LIMIT_LO                        8750
 #define FM_BAND_LIMIT_HI                        10800
 
-#define TX_POWER_LIMIT_LO                       79
-#define TX_POWER_LIMIT_HI                       120
+#define TX_POWER_LIMIT_LO                       1
+#define TX_POWER_LIMIT_HI                       121
 #define ANT_CAPACITOR_LIMIT_HI                  191
 
 #define MASK_TX_COMPONENT_ENABLE_RDS            0x04
@@ -194,6 +194,8 @@
 #define TX_RDS_PS_AF_OFF                        0xE0E0
 #define TX_RDS_PS_AF_MIN                        0xE0E1  //87.6 MHz
 #define TX_RDS_PS_AF_MAX                        0xE1CC  //107.9 MHz
+
+#define TX_PILOT_FREQUENCY                      19000
 
 ///MACROS
 #define HI_BYTE(X)      (uint8_t) ((X & 0xFF00) >> 8)
